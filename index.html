@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idealgewichtsrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="rechner_section">
+        <article class="rechner_container">
+            <h3 class="rechner_headline">Idealgewichtsrechner</h3>
+            <form class="rechner_form">
+                <label for="">Körpergröße</label>
+                <input type="number" name="input1" id="input1" required>
+                <label for="">Alter</label>
+                <input type="number" name="input2" id="input2" required>
+                <label for="">Körperbau</label>
+                <div>
+                    <input type="radio" name="koerperbau" id="input3">
+                    <label for="">Breite</label>
+                    <input type="radio" name="koerperbau" id="input4">
+                    <label for="">Schmale</label>
+                </div>
+                <input type="submit" value="Submit" onclick="berechnen()">
+            </form>
+            <p>Dein Idealgewicht ist: <span id="output"></span></p>
+        </article>
+    </section>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
